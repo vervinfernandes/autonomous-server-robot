@@ -31,7 +31,7 @@ void PID_control() {
       motorSpeedRight = kMaxSpeed;
     if (motorSpeedLeft < kMinSpeed)
       motorSpeedLeft = kMinSpeed;
-    if (motorSpeedRight < kBaseSpeed)
+    if (motorSpeedRight < kMinSpeed)
       motorSpeedRight = kMinSpeed;
 
     motorSpeedLeft += 75; //old speed was 150
