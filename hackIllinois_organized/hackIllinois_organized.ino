@@ -15,14 +15,12 @@ void setup() {
 
 void loop() { // each iteration is one table
 
-  ///PID_control();
+  PID_control();
 
-  ///Serial.println("black line detected");
+  leftMotor(0);
+  rightMotor(0);
 
-  ///leftMotor(0);
-  ///rightMotor(0);
-
-  pourWater();
+  // pourWater();
 
   // leftMotor(110);
   // rightMotor(110);
