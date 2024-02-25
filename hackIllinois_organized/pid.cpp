@@ -13,6 +13,8 @@ void PID_control() {
     right = getLightVal(RIGHT_SENSOR_PIN, kNumBeeps);
     farLeft = getLightVal(FARLEFT_SENSOR_PIN, kNumBeeps);
 
+    if (farLeft > kBlackMin) break;
+    
     int error = left - right;
     int P = error;
     I = I + error;
